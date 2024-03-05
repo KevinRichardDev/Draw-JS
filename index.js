@@ -3,8 +3,11 @@ const ctx = canvas.getContext("2d");
 
 function getMousePos(e) {
   const rect = canvas.getBoundingClientRect();
-  
-  console.log(rect);
+
+  return {
+    x: e.clientX - rect.left,
+    
+  }
 }
 
 canvas.addEventListener("mousedown", (e) => {

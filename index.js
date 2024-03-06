@@ -6,11 +6,11 @@ function getMousePos(e) {
 
   return {
     x: e.clientX - rect.left,
-    
-  }
+    y: e.clientY - rect.top,
+  };
 }
 
 canvas.addEventListener("mousedown", (e) => {
   e.preventDefault();
-  getMousePos(e);
+  console.log(getMousePos(e));
 });

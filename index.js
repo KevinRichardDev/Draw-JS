@@ -14,5 +14,5 @@ canvas.addEventListener("mousedown", (e) => {
   e.preventDefault();
   const mousePos = getMousePos(e);
   ctx.beginPath();
-  ctx.moveTo()
+  ctx.moveTo(mousePos.x, mousePos.y);
 });

@@ -12,5 +12,7 @@ function getMousePos(e) {
 
 canvas.addEventListener("mousedown", (e) => {
   e.preventDefault();
-  console.log(getMousePos(e));
+  const mousePos = getMousePos(e);
+  ctx.beginPath();
+  ctx.moveTo()
 });

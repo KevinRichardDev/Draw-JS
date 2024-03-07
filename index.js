@@ -24,5 +24,8 @@ canvas.addEventListener("mousedown", (e) => {
   ctx.beginPath();
   ctx.moveTo(mousePos.x, mousePos.y);
 
-  canvas.addEventListener('mousemove', mouseMove)
+  canvas.addEventListener('mousemove', mouseMove);
+  canvas.addEventListener('mouseup', () => {
+    canvas.removeEventListener('mousemove', mouseMove);
+  })
 });

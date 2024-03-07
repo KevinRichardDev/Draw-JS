@@ -10,9 +10,13 @@ function getMousePos(e) {
   };
 }
 
+
+
 canvas.addEventListener("mousedown", (e) => {
   e.preventDefault();
   const mousePos = getMousePos(e);
   ctx.beginPath();
   ctx.moveTo(mousePos.x, mousePos.y);
+
+  canvas.addEventListener('mousemove', mouseMove)
 });

@@ -14,6 +14,8 @@ function mouseMove(e) {
   const mousePos = getMousePos(e);
   ctx.lineTo(mousePos.x, mousePos.y);
   ctx.stroke();
+  ctx.strokeStyle = "salmon";
+  ctx.lineWidth = 8;
 }
 
 canvas.addEventListener("mousedown", (e) => {

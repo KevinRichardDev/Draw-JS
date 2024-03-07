@@ -10,7 +10,11 @@ function getMousePos(e) {
   };
 }
 
-
+function mouseMove(e) {
+  const mousePos = getMousePos(e);
+  ctx.lineTo(mousePos.x, mousePos.y);
+  ctx.stroke();
+}
 
 canvas.addEventListener("mousedown", (e) => {
   e.preventDefault();

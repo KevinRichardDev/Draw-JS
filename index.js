@@ -31,5 +31,5 @@ canvas.addEventListener("mousedown", (e) => {
 });
 
 reset.addEventListener("click", () => {
-  ctx.clearRect(0, 0, 800, 400);
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
 });
